@@ -50,7 +50,7 @@ if (response.data.token) {
   }));
 }
 
-      setTimeout(() => navigate("/profile"), 1500);
+      setTimeout(() => navigate("/home"), 1500);
 
     } catch (error) {
       setErrorMessage(error.response?.data?.message || "An error occurred. Please try again.");

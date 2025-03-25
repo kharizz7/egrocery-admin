@@ -16,7 +16,7 @@ const Profile = () => {
     // redirect to login page if user not found
     useEffect(()=> {
         if(!user){
-            navigate("/login")
+            navigate("/")
         }
     },[user, navigate]);
 
@@ -24,7 +24,7 @@ const Profile = () => {
 
     const handleLogout = () => {
         dispatch(clearUser());
-        navigate("/login");
+        navigate("/");
     }
 
     return(
