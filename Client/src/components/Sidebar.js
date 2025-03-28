@@ -16,6 +16,7 @@ const Sidebar = ({ children }) => {
         <ul className="space-y-4">
           <li><button onClick={() => handleNavigation('/home')} className="hover:text-gray-300">Home</button></li>
           <li><button onClick={() => handleNavigation('/upload')} className="hover:text-gray-300">Upload</button></li>
+          <li><button onClick={() => handleNavigation('/stock')} className='hover:text-gray-300'>Stock</button></li>
           <li><button onClick={() => handleNavigation('/orders')} className="hover:text-gray-300">Orders</button></li>
           <li><button onClick={() => handleNavigation('/contact')} className="hover:text-gray-300">Contact</button></li>
         </ul>

@@ -7,6 +7,7 @@ import Orders from './components/Orders';
 import Contact from './components/Contact';
 import Profile from './components/Profile';
 import Account from './components/Account';
+import Stock from './components/Stock'
 
 const App = () => (
   <Router>
@@ -16,7 +17,8 @@ const App = () => (
         <Sidebar>
           <Routes>
             <Route path="/home" element={<Home />} />
-            <Route path="/upload" element={<Upload />} />
+            <Route path="/upload" element={ <Upload category="Product" apiUrl="http://localhost:3000/api/products" />} />
+            <Route path='/stock' element={<Stock />} />
             <Route path="/orders" element={<Orders />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/profile" element={<Profile />} />
